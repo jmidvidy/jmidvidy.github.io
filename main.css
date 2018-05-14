@@ -1,0 +1,109 @@
+/* 
+	Global classes 
+					*/
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#navbar li {
+    float: left;
+    margin-left: 10px;
+}
+
+#navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbar li a:hover {
+    background-color: #111;
+}
+
+
+#navbar {
+	width: 830px;
+	text-align: center;
+	padding-left: 300px;
+}
+
+#RepTask3 {
+	width: 825px;
+	height: 800px;
+	border: 2px solid black;
+	margin-left: 300px;
+	margin-top: 10px;
+}
+
+#ReduceImpact {
+	width: 800px;
+	height: 47%;
+	border: 1px solid grey;
+	margin: 13px auto;
+}
+
+#LocalSolutions {
+	width: 800px;
+	height: 47%;
+	border: 1px solid grey;
+	margin: 10px auto;
+}
+
+#RILeft {
+	width: 47%;
+	height: 98%;
+	border: 1px dotted grey;
+	float: left;
+	margin-left: 15px;
+	margin-top: 3px;
+	text-align: center;
+}
+
+
+#RILeft h3 {
+	text-decoration: underline;
+}
+
+#RILeft ul {
+    list-style-type: none;
+    margin-top: 30px;
+    padding: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+#RILeftli a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#RILeft li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+#RILeft li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+
+#RIRight {
+	width: 47%;
+	height: 98%;
+	border: 1px dotted grey;
+	margin-right: 15px;
+	margin-top: 3px;
+	float: right;
+	background-color: #3498DB;
+
+}
+
+
