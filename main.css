@@ -96,8 +96,6 @@
     color: white;
 }
 
-
-
 #RIRight {
 	width: 47%;
 	height: 98%;
@@ -106,5 +104,38 @@
 	margin-top: 3px;
 	float: right;
 	background-color: #3498DB;
+}
 
+#LocalSolutions {
+	text-decoration: underline;
+}
+
+#LocalSolutions h3 {
+	padding-left: 35px;
+}
+
+#map {
+	width: 350px;
+	height: 300px;
+	float: left;
+	margin-left: 30px;
+}
+
+#LSLeft{
+	width: 350px;
+	height:300px;
+	float:left;
+	margin-right: 56px;
+}
+
+#LSRight {
+	width: 350px;
+	height: 300px;
+	float: left;
+	border: 1px dotted grey;
+}
+
+#LSRight h3{
+	text-decoration: underline;
+	text-align: left;
 }

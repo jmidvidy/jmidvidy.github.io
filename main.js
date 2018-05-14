@@ -21,3 +21,5 @@ function search(){
  	document.getElementById('RIRight-text').innerHTML = item
 
  }
+
+
