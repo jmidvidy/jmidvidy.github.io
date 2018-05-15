@@ -17,9 +17,7 @@ function search(){
 
 
  function showInfo(item){
-
  	document.getElementById('RIRight-text').innerHTML = item
-
  }
 
 
