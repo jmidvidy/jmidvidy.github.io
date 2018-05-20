@@ -7,6 +7,12 @@ html, body{
 	width: 100%;
 }
 
+/* This keeps images from overflowing their div containers (note that they still may not be the proper resolution to fit perfectly) */
+img {
+	max-width: 100%; 
+	max-height: 100%; 
+}
+
 .intro {
 	height: 100%;
 	width: 100%;

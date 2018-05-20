@@ -66,27 +66,27 @@
             
           </div>
         </div>
-      <h1 id="Section-Three" class="display-3">Extremly Important Environmental Information</h1>
+      <h1 id="Section-Three" class="display-3">Environmental Impact</h1>
       <div id ="Third-Block">
           <div id="TB-Main">
             <div id="TB-Top-Nav">
               <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                  <label class="btn btn-info">
+                  <label class="btn btn-info" onmousedown="showEnvironmentalInfo('Furniture')">
                     <input type="checkbox" checked="" autocomplete="off"> Furniture
                   </label>
-                  <label class="btn btn-info">
+                  <label class="btn btn-info" onmousedown="showEnvironmentalInfo('Cookware')">
                     <input type="checkbox" autocomplete="off"> Cookware
                   </label>
-                  <label class="btn btn-info">
+                  <label class="btn btn-info" onmousedown="showEnvironmentalInfo('Lights')">
                     <input type="checkbox" autocomplete="off"> Lights
                   </label>
-                  <label class="btn btn-info">
+                  <label class="btn btn-info" onmousedown="showEnvironmentalInfo('Boxes')">
                     <input type="checkbox" autocomplete="off"> Boxes
                   </label>
-                  <label class="btn btn-info">
+                  <label class="btn btn-info" onmousedown="showEnvironmentalInfo('School-Supplies')">
                     <input type="checkbox" autocomplete="off"> School-Supplies
                   </label>
-                  <label class="btn btn-info">
+                  <label class="btn btn-info" onmousedown="showEnvironmentalInfo('Cleaning')">
                     <input type="checkbox" autocomplete="off"> Cleaning
                   </label>
                 </div>
@@ -95,16 +95,16 @@
               <div id="Charts">
                 <div class="jumbotron">
                    <div id="chart1">
-                        <p>Relevant Chart</p>
+                        <img src="images/placeholder_chart.png" alt="Relevant chart"> 
                     </div>
                     <div id="chart2">
-                        <p>Relevant Chart</p>
+                      <img src="images/placeholder_chart.png" alt="Relevant chart"> 
                     </div>
                     <div id="chart3">
-                          <p>Relevant Chart</p>
+                      <img src="images/placeholder_chart.png" alt="Relevant chart"> 
                     </div>
                     <div id="chart4">
-                          <p>Relevant Chart</p>
+                      <img src="images/placeholder_chart.png" alt="Relevant chart"> 
                    </div>
                 </div>
               </div>
@@ -113,7 +113,7 @@
                   <div class="card-header">Important Statistical Information</div>
                   <div class="card-body">
                     <h4 class="card-title">Relevant Stats</h4>
-                    <p class="card-text">Good List of Stats</p>
+                    <p class="card-text" id="statistic-text">Good List of Stats</p>
                   </div>
                </div>
               </div>
@@ -123,7 +123,7 @@
                   <div class="card-body">
                     <h4 class="card-title">Relevant Environmental Impact for Category</h4>
                     <hr class="my-4">
-                    <p class="card-text">Paragraph for each category</p>
+                    <p class="card-text" id="impact-paragraph">Paragraph for each category</p>
                   </div>
             </div>
           </div>
@@ -201,7 +201,7 @@
             <div class="card-header">Evanston Resources</div>
             <div class="card-body">
               <ul class="list-group">
-                <li class="list-group-item d-flex justify-content-between align-items-center" onmouseover = "function()">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
                   <a href = "https://www.cityofevanston.org/government/departments/public-works/services/trash-recycling-and-yard-waste-services/recycling-do-s-and-don-ts">City Guidelines</a>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -218,7 +218,7 @@
               <div class="card-header">Northwestern Resources</div>
              <div class="card-body">
                <ul class="list-group">
-                  <li class="list-group-item d-flex justify-content-between align-items-center" onmouseover = "function()">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
                     <a href = "https://www.facebook.com/groups/357858834261047/">Buy/Sell Facebook Group</a>
                   </li>
                   <li class="list-group-item d-flex justify-content-between align-items-center">
