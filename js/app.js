@@ -1,3 +1,69 @@
+//intro animation
+$(function(){
+    function onScrollInit( items, trigger ) {
+        items.each( function() {
+        var osElement = $(this),
+            osAnimationClass = osElement.attr('data-os-animation'),
+            osAnimationDelay = osElement.attr('data-os-animation-delay');
+          
+            osElement.css({
+                '-webkit-animation-delay':  osAnimationDelay,
+                '-moz-animation-delay':     osAnimationDelay,
+                'animation-delay':          osAnimationDelay
+            });
+
+            var osTrigger = ( trigger ) ? trigger : osElement;
+            
+            osTrigger.waypoint(function() {
+                osElement.addClass('animated').addClass(osAnimationClass);
+                },{
+                    triggerOnce: true,
+                    offset: '80%'
+            });
+        });
+    }
+
+    onScrollInit( $('.os-animation') );
+    onScrollInit( $('.staggered-animation'), $('.staggered-animation-container') );
+});//]]>  
+
+
+var prev;
+
+//table hovering
+$(function () {
+    $(".list-group li").click(function () {
+        //change previous selection to original color
+        $(prev).css('background-color', '')
+
+        //update new selection
+        $(this).css('background-color', 'cyan');
+        prev = this;
+    });
+});
+
+
+//scroll
+$(".intro a").click(function(e){
+        //anon ID, adds event listener to a tags inside of .intro
+        //when event occurs, scrolls to desired href tag
+       var sectionID = e.currentTarget.id + "-Section";
+       //alert(sectionID);
+       //animate
+       $("html, body").animate({
+            scrollTop: $("#" + sectionID).offset().top},'slow');
+    });
+});
+
+
+
+
+$("button").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".second").offset().top},
+        'slow');
+});
+
 function showInfo(item){
 
     document.getElementById('RIRight-card-header').innerHTML = item;
@@ -11,7 +77,7 @@ if (item ==  'Furniture') {
 
  }
  if (item ==  'School Supplies') {
-    document.getElementById('RIRight-card-text').innerHTML = "<img src= \"images/papers.jpg\" style=\"height:220px;alt=\"Paper\"><br> <br> For Notebooks, we suggest the following: <li> If over half the notebook is unused, save it <br> for another class. </li> <li> If the course material is important to you, <br> keep it! </li> <li> Recycle Recycle Recycle! </li>";
+    document.getElementById('RIRight-card-text').innerHTML = "<img src=\"images/papers.jpg\" style=\"height:220px;alt=\"Paper\"><br> <br> For Notebooks, we suggest the following: <li> If over half the notebook is unused, save it <br> for another class. </li> <li> If the course material is important to you, <br> keep it! </li> <li> Recycle Recycle Recycle! </li>";
 
  }
 if (item ==  'Lights') {
@@ -33,3 +99,5 @@ if (item ==  'Lights') {
     document.getElementById('RIRight-card-text').innerHTML = "<img src=\"images/fridge.JPG\" style=\"height:220px;alt=\"Boxes\"><br> <br> For Appliances, we suggest the following: <li> If you want to keep it but can't take it home, consider renting a storage facility. </li><li> If it works but you aren't keeping it, consider selling <br> or donating to a charitable cause. </li> <li> If broken, check your local guidelines for resources for recycling. </li> ";
 }
  }
+
+

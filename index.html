@@ -4,101 +4,137 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+   
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
-
+    
     <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
+    <link href="css/page1.css" rel="stylesheet">
     <!-- JavaScript files-->
-    <script src="js/index.js"> </script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <script src="index.js"> </script>
+    <title>EECS 330: HTMLorTTYL</title>
   </head>
   <body>
-    
-      <div id = "top-head-bar">
-        <div class="alert alert-dismissible alert-warning">
-          <h3 class="alert-heading">------------------------------ HTMLorTTYL ------------------------------</h3>
-        </div>
-    </div>
-
-    <div id="top-nav-bar">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="">Your One-Stop Resource for Moving Out<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="">Environmental Impact and Solutions</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="">Pro-Environmental Solutions</a>
-              </li>
-            </ul>
-        </div>
-      </nav>
-  </div>
-
-  <div id = "Environmental-Solutions">
-    <div class="jumbotron">
-      <h4>How to reduce your environemntal impact when you move: </h4>
-      <div id = ES-Block>
-        <div id = "RILeft">
-        <div class="card text-white bg-success mb-3">
-          <div class="card-header">Reduce Impact</div>
-            <div class="card-body">
-              <ul class="list-group">
-                <li id = "Furniture" class="list-group-item d-flex justify-content-between align-items-center" onmouseover = "showInfo('Furniture')">
-                  <a>Furniture</a>
-                </li>
-                <li id = "Cookware" class="list-group-item d-flex justify-content-between align-items-center" onmouseover = "showInfo('Cookware')">
-                  Cookware
-                </li>
-                <li id = "Lights" class="list-group-item d-flex justify-content-between align-items-center" onmouseover = "showInfo('Lights')">
-                  Lights
-               </li>
-               <li id = "Boxes" class="list-group-item d-flex justify-content-between align-items-center" onmouseover = "showInfo('Boxes')">
-                  Boxes
-               </li>
-               <li id = "School Supplies" class="list-group-item d-flex justify-content-between align-items-center" onmouseover = "showInfo('School Supplies')">
-                  School Supplies
-               </li>
-               <li id = "Appliances" class="list-group-item d-flex justify-content-between align-items-center" onmouseover = "showInfo('Appliances')">
-                  Appliances
-               </li>
-               <li id = "Cleaning" class="list-group-item d-flex justify-content-between align-items-center" onmouseover = "showInfo('Cleaning')">
-                  Cleaning Your Apartment
-               </li>
-             <!--   <li id = "Resources" class="list-group-item d-flex justify-content-between align-items-center" onmouseover = "showInfo('Resources')">
-                  Resources
-               </li>-->
-            </ul>
-         </div>
+    <section class="intro">
+      <div class="inner">
+        <div class="content">
+            <h1> GoGreen Move </h1>
+            <a href ="#main-body-Section" id="main-body" class="btn"> ENTER </a>
+          </section>
         </div>
       </div>
-    <div id = "RIRight">
-      <div class="card border-success mb-3">
-        <div id = "RIRight-card-header" class="card-header">Useful Resources</div>
-        <div class="card-body">
-          <p id = "RIRight-card-text" class="card-text">Hover over one of the categories on the left to see useful resources for an eco-friendly move.</p>
+    </section>
+
+
+
+
+    <div id = "main-body-Section">
+      <h1 class="display-3">What is GoGreen Move?</h1>
+      <div class="jumbotron">
+        <div id = "First-Block">
+            <div class="text-body">
+              <p>At the end of every year, most Northwestern students change residencies.  Freshman move out of dorms, sophomores move out of Greek housing, and juniors and seniors switch apartments or move away from Evanston all together.  In this annual movement, one of the most overlooked and environmentally significant processes is disposal of items that occupants do not intend to bring to their next living space.</p>
+              <p>These items can include large sets of furniture, bed frames, desks, tables, lighting fixtures, chairs, TVs, TV stands and other apartment furnishings.  Likewise, these items can include day-to-day items like cleaning equipment, textbooks, binders, pens, notebooks, pots, pans, plates, and other household necessities.</p>
+              <p>Most student try to recycle where convenient and, at worst, try to follow the school and city’s guidelines about how to discard of their various items.  Yet, with so many students and so large a variety of items that are thrown out, we are convinced that there must be a more effective and environmentally sustainable method of moving.  This project is a tool to directly address, educate, and improve upon this issue.</p>
+              <p> This page has three important sections:</p>
+
+                
+              
+          </div>
+      </div>
+      <div id="top-nav-bar">
+          <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#Section-Two">Your One-Stop Resource for Moving Out<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Section-Three">Environmental Impact and Critical Information</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#Section-Four">Pro-Environmental Solutions</a>
+                </li>
+              </ul>
+          </div>
+        </nav>
+                    </div>
+      <h1 id="Section-two" class="display-3">Your-One Stop Shop for Moving Out</h1>
+      <div id = Second-Block>
+          <div id="SB-Main">
+
+              
+            
           </div>
         </div>
-      </div>
-    </div>
-    </div>
-  </div>
+      <h1 id="Section-Three" class="display-3">Extremly Important Environmental Information</h1>
+      <div id ="Third-Block">
+          <div id="TB-Main">
 
-  <div id = "Local-Resources">
+
+              
+            
+          </div>
+      </div>
+      <h1 id = "Section-Four" class="display-3">Useful Eco-Friendly Solutions</h1>
+      <div id = Fourth-Block>
+        <div id="FB-Main">
+          <div id = "Environmental-Solutions">
+              <div class="jumbotron">
+                <h4>How to reduce your environemntal impact when you move: </h4>
+                <div id = ES-Block>
+                  <div id = "RILeft">
+                  <div class="card text-white bg-success mb-3">
+                    <div class="card-header">Reduce Impact</div>
+                      <div class="card-body">
+                        <ul class="list-group">
+                          <li id = "Furniture" class="list-group-item d-flex justify-content-between align-items-center" onmouseover = "showInfo('Furniture')">
+                            <a>Furniture</a>
+                          </li>
+                          <li id = "Cookware" class="list-group-item d-flex justify-content-between align-items-center" onmouseover = "showInfo('Cookware')">
+                            Cookware
+                          </li>
+                          <li id = "Lights" class="list-group-item d-flex justify-content-between align-items-center" onmouseover = "showInfo('Lights')">
+                            Lights
+                         </li>
+                         <li id = "Boxes" class="list-group-item d-flex justify-content-between align-items-center" onmouseover = "showInfo('Boxes')">
+                            Boxes
+                         </li>
+                         <li id = "School Supplies" class="list-group-item d-flex justify-content-between align-items-center" onmouseover = "showInfo('School Supplies')">
+                            School Supplies
+                         </li>
+                         <li id = "Appliances" class="list-group-item d-flex justify-content-between align-items-center" onmouseover = "showInfo('Appliances')">
+                            Appliances
+                         </li>
+                         <li id = "Cleaning" class="list-group-item d-flex justify-content-between align-items-center" onmouseover = "showInfo('Cleaning')">
+                            Cleaning Your Apartment
+                         </li>
+                       <!--   <li id = "Resources" class="list-group-item d-flex justify-content-between align-items-center" onmouseover = "showInfo('Resources')">
+                            Resources
+                         </li>-->
+                      </ul>
+                   </div>
+                  </div>
+                </div>
+              <div id = "RIRight">
+                <div class="card border-success mb-3">
+                  <div id = "RIRight-card-header" class="card-header">Useful Resources</div>
+                  <div class="card-body">
+                    <p id = "RIRight-card-text" class="card-text">Hover over one of the categories on the left to see useful resources for an eco-friendly move.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+
+    <div id = "Local-Resources">
       <div class="jumbotron">
       <h4>Local Resources Crucial to an Eco-Friendly Move:</h4>
       <div id = "LS-Block">
@@ -129,36 +165,54 @@
                </li>
             </ul>
             </div>
-        </div>
-        <div id = "Northwestern-Resources">
-          <div class="card text-white bg-success mb-3">
-            <div class="card-header">Northwestern Resources</div>
-            <div class="card-body">
-              <ul class="list-group">
-                <li class="list-group-item d-flex justify-content-between align-items-center" onmouseover = "function()">
+          </div>
+          <div id = "Northwestern-Resources">
+           <div class="card text-white bg-success mb-3">
+              <div class="card-header">Northwestern Resources</div>
+             <div class="card-body">
+               <ul class="list-group">
+                  <li class="list-group-item d-flex justify-content-between align-items-center" onmouseover = "function()">
                     <a href = "https://www.facebook.com/groups/357858834261047/">Buy/Sell Facebook Group</a>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
                   <a href = "https://www.google.com/search?safe=off&rlz=1C1CHBF_enUS775US775&q=local+buy+and+sell+evanston&npsic=0&rflfq=1&rlha=0&rllag=42046894,-87687131,606&tbm=lcl&ved=0ahUKEwi9oLyBlIbbAhWl8oMKHRY4AFAQjGoIZQ&tbs=lrf:!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:10&rldoc=1#rlfi=hd:;si:;mv:!1m3!1d52627.894951219554!2d-87.7285111!3d42.0013075!2m3!1f0!2f0!3f0!3m2!1i320!2i426!4f13.1;tbs:lrf:!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:10">Local Buy and Sell Stores</a>
-                </li>
+                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                  <a href = "http://www.beckstextbooks.com/store14/SelectTermDept.aspx">Textbook Exchange</a>
-               </li>
+                   <a href = "http://www.beckstextbooks.com/store14/SelectTermDept.aspx">Textbook Exchange</a>
+                </li>
                  <li class="list-group-item d-flex justify-content-between align-items-center">
                   <a href = "http://www.nucampussolutions.com/">Campus Solutions</a>
                </li>
-            </ul>
+              </ul>
+             </div>
             </div>
           </div>
         </div>
-      </div>
       
       </div>       
     </div>
   </div>
+              
+            
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+
+
+
+
+
+
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+ 
+
+
+
   </body>
 </html>
