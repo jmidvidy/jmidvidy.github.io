@@ -1,3 +1,78 @@
+//smooth scroll implementation
+$(document).ready(function(){
+
+    $("#enter-button").click(function(e){
+
+        //don't jump
+        e.preventDefault();
+
+        //enter button is this
+        var scrollTo = $(this).attr('href');
+      //  console.log($(scrollTo).offset().top);
+
+       $("html, body").animate({
+            scrollTop: $(scrollTo).offset().top
+        },1000);
+    });
+
+
+    $(".nav-link").click(function(e){
+
+        //don't jump
+        e.preventDefault();
+
+        //enter button is this
+        var scrollTo = $(this).attr('href');
+      //  console.log($(scrollTo).offset().top);
+
+       $("html, body").animate({
+            scrollTop: $(scrollTo).offset().top - 155
+        },1000);
+    });
+
+
+});
+
+//intro animation
+$(document).ready(function(){
+    function onScrollInit( items, trigger ) {
+        items.each( function() {
+        var osElement = $(this),
+            osAnimationClass = osElement.attr('data-os-animation'),
+            osAnimationDelay = osElement.attr('data-os-animation-delay');
+          
+            osElement.css({
+                '-webkit-animation-delay':  osAnimationDelay,
+                '-moz-animation-delay':     osAnimationDelay,
+                'animation-delay':          osAnimationDelay
+            });
+
+            var osTrigger = ( trigger ) ? trigger : osElement;
+            
+            osTrigger.waypoint(function() {
+                osElement.addClass('animated').addClass(osAnimationClass);
+                },{
+                    triggerOnce: true,
+                    offset: '80%'
+            });
+        });
+    }
+
+    onScrollInit( $('.os-animation') );
+    onScrollInit( $('.staggered-animation'), $('.staggered-animation-container') );
+});//]]>  
+
+
+
+
+
+
+
+
+
+
+
+
 // Changes information displayed in "Eco-Friendly Solutions" section based on which category the user hovers over. 
 function showInfo(item){
 
