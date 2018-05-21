@@ -110,8 +110,9 @@ img {
   background-color: cyan;
   font-size: 5000%;
   border-top:3px solid #1a1a1a;
-  /*position: fixed;
-  /*top: 0%;*/
+  position: sticky;
+  top: 0%;
+  z-index: 100;
 }
 
 #top-nav-bar  {
@@ -132,7 +133,7 @@ img {
 }
 
 
-#Section-two {
+#Section-Two {
 	height: 1%;
 }
 
@@ -155,7 +156,7 @@ img {
 
 
 #Section-Three {
-	height: 1.5%;
+	height: 1%;
 }
 
 #Section-Four {
