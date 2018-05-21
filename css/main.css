@@ -1,0 +1,498 @@
+@import url("bootstrap.css");
+
+html, body{
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+/* This keeps images from overflowing their div containers (note that they still may not be the proper resolution to fit perfectly) */
+img {
+	max-width: 100%; 
+	max-height: 100%; 
+}
+
+.intro {
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	background: url("img/bgll.jpg") no-repeat 50% 50%;
+	background-size: cover;
+	color: grey;
+	display: table;
+	top: 0;
+}
+
+.intro .inner {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	padding-bottom: 10%;
+}
+
+.content h1 {
+	color: #F9F3F4;
+	text-shadow:3px 3px black;
+	font-size: 650%;
+	max-width: 2000px;
+	padding-bottom: 100px
+}
+
+.intro .inner .btn {
+	font-size: 300%;
+	color: cyan;
+	text-shadow:3px 3px black;
+	border: 2px solid cyan;
+	padding: 20px 20px;
+	border-radius: 10px;
+}
+
+.intro .inner .btn:hover{
+	color: #e83e8c;
+	border: 2px solid #e83e8c;
+}
+
+#main-body-Section {
+	width: 100%;
+	height: 4000px;
+	margin: auto;
+}
+
+#main-body-Section .jumbotron {
+	height: 300%;
+	width: 100%;
+	color: black;
+	padding-top: 0px;
+}
+
+#First-Block {
+	width: 87%;
+	height: 4%;
+	padding: 0;
+	margin: auto;
+	margin-bottom: 0px;
+}
+
+.display-3 {
+	text-align: center;
+	font-size: 420%;
+	width:100%;
+	background-color:#4BBF73 ;
+	height: 2.5%;
+	padding-top: 15px;
+	border-top:3px solid #1a1a1a;
+	border-bottom:3px solid #1a1a1a;
+	text-shadow:3px 3px white;
+
+}
+
+#First-Block .text-body {
+	width: 90%;
+	height: 80%;
+	margin: auto;
+	color: black;
+}
+#First-Block .text-body p {
+	color: black;
+	text-indent: 25px;
+	font-size: 150%;
+}
+
+#First-Block hr {
+	margintop:0px;
+}
+
+#top-nav-bar {
+  width: 100%;
+  height: 1.3%;
+  text-align: center;
+  background-color: cyan;
+  font-size: 5000%;
+  border-top:3px solid #1a1a1a;
+  /*position: fixed;
+  /*top: 0%;*/
+}
+
+#top-nav-bar  {
+  color: cyan;
+}
+
+#top-nav-bar .nav-item {
+  border: 2px solid #1a1a1a;
+  text-shadow:1px 1px #e83e8c;
+  color: white;
+  height: 90%;
+  width: 70%;
+}
+
+#top-nav-bar a:hover {
+	color:  #e83e8c;
+	border: 2px solid #e83e8c;
+}
+
+
+#Section-two {
+	height: 1%;
+}
+
+
+
+#Second-Block {
+	width: 100%;
+	height: 8%;
+	margin: auto;
+	color: black;
+	margin-top: 25px;
+}
+
+#SB-Main {
+	width: 90%;
+	height: 98%;
+	border:2px solid #1a1a1a;
+	margin: auto;
+}
+
+
+#Section-Three {
+	height: 1.5%;
+}
+
+#Section-Four {
+	height: .9%;
+}
+
+#Third-Block {
+	height: 8%;
+}
+
+#TB-Main {
+	width: 90%;
+	height: 98%;
+	border:2px solid #1a1a1a;
+	margin: auto;
+}
+
+#Fourth-Block {
+	height: 10%;
+}
+
+#FB-Main {
+	width: 90%;
+	height: 98%;
+	margin: auto;
+	border:2px solid #1a1a1a;
+}
+
+/*--------------- Middle Section Body ----------------- */
+
+
+#TB-Top-Nav {
+	width: 99.9%;
+	height: 5.6%;
+	float: left;
+
+}
+
+#TB-Top-Nav .btn-group {
+	width:100%;
+	}
+
+#TB-Top-Nav label {
+	padding-left: 5.53%;
+	padding-right: 5.53%
+	}
+
+#TB-Top {
+	width:  100%;
+	height: 46%;
+	margin-top: 5%;
+	margin-bottom: 1%;
+}
+
+#Charts {
+	width: 49%;
+	height: 100%;
+	float: left;
+	margin-left: .5%;
+}
+
+#Charts .jumbotron {
+	height: 100%;
+	width: 100%;
+	background-color: #1F9BCF;
+	border:1px solid #1a1a1a;
+}
+
+#chart1 {
+	width: 48%;
+	height: 48%;
+	border:1px solid white;
+	float: left;
+	margin-left: 1%;
+	margin-top: 1%;
+}
+
+#chart2 {
+	width: 48%;
+	height: 48%;
+	border:1px solid white;
+	float: left;
+	margin-left: 1%;
+	margin-top: 1%;
+
+}
+
+#chart3 {
+	width: 48%;
+	height: 48%;
+	border:1px solid white;
+	float: left;
+	margin-left: 1%;
+	margin-top: 1%;
+
+}
+
+#chart4 {
+	width: 48%;
+	height: 48%;
+	border:1px solid white;
+	float: left;
+	margin-left: 1%;
+	margin-top: 1%;
+
+}
+
+#Stats {
+	width: 49%;
+	height: 100%;
+	float:left;
+	margin-left: .5%;
+}
+
+#Stats .card {
+	width: 100%;
+	height: 100%;
+}
+
+#TB-Bottom {
+	width: 100%;
+	height: 44%;	
+}
+
+#TB-Bottom .card {
+	width: 99%;
+	height: 100%;
+	margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------- Last Section Body ----------------- */
+
+
+/*--Top--*/
+#Environmental-Solutions {
+  height: 45%;
+}
+
+#Environmental-Solutions .jumbotron {
+  margin-bottom: 0px;
+  height: 100%;
+  width: 100%;
+
+
+}
+
+#ES-Block {
+  height: 90%;
+  width: 100%;
+  margin-left: 1%;
+}
+
+
+/*Top Left */
+
+#RILeft {
+  width: 36.3%;
+  height: 100%;
+  margin: 0px 0px 0px 0px;
+  text-align: center; 
+  float:left;
+  padding-left: 0px;
+}
+
+#RILeft .card {
+  height: 100%;
+}
+
+#RILeft .card-body {
+  padding-bottom: 42px;
+
+}
+
+/*Top Right*/
+
+#RIRight{
+  float:left;
+  margin-left: 10px;
+  height: 100%; 
+  width: 60%;
+}
+
+#RIRight .card {
+  color: black;
+}
+
+#RIRight .card-header {
+  color: black;
+  text-align: center;
+}
+
+#RIRight .card-body {
+  color: black;
+  text-align: center;
+}
+
+#RIRight .card-body li {
+  color: black;
+  text-align: center;
+}
+
+#Environmental-Solutions .list-group {
+  color: black;
+  text-align: center;
+}
+
+
+#RILeft li:hover {
+  background-color: cyan;
+}
+
+#RIRight .card{
+  width: 100%;
+  height: 100%;
+}
+
+
+/*--BOTTOM--*/
+
+
+#Local-Resources{
+  width: 100%;
+  height:50%;
+}
+
+#Local-Resources .jumbotron{
+  width: 100%;
+  height: 95%;
+  margin: 0px 0px 0px 0px;
+  float: left;
+  
+
+}
+
+#LS-Block {
+  height: 94%;
+  width: 100%;
+}
+
+#LSLeft {
+  height: 100%;
+  width: 60%;
+  margin: 0px 0px 0px 0px;
+  float: left;
+}
+
+#LSLeft .card{
+  padding-left: 20px;
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+
+iframe {
+  height: 420px;
+  width: 98%;
+  align-content: center;
+}
+
+#LSRight {
+  height: 100%;
+  width: 38%;
+  float: left;
+  margin-left: 12px;
+}
+
+#LSLeft .card-body {
+  padding: 15px 15px 0px 0px;
+}
+
+#LSRight .card {
+  width: 100%;
+  height: 45%;
+  float:left;
+  margin-bottom: 1px;
+  padding-bottom: 0px;
+}
+
+
+#Northwestern-Resources .card {
+  margin-top: 0px;
+  padding-bottom: 0pxs;
+  width: 100%;
+  height: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
