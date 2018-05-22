@@ -229,7 +229,7 @@ img {
 	width: 48%;
 	height: 48%;
 	border:1px solid white;
-	float: left;
+	float:left;
 	margin-left: 1%;
 	margin-top: 1%;
 }
@@ -288,7 +288,9 @@ img {
 }
 
 
-
+.card-text{
+	font-size:20px;
+}
 
 
 

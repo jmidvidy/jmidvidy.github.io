@@ -118,38 +118,38 @@ function showEnvironmentalInfo(item) {
     switch(item) {
         case "Furniture": {
             updateCharts("images/couch.jpg", "images/chairs3.jpg", "images/furniture2.jpg", "images/chairtrashpic.jpg"); 
-            updateStats("There are 9.8 million tons of furniture waste added to landfills per year."); 
-            updateImpact("As you can see, the vast majority of furniture is disposed of in a landfill,\n while some of it is burned.\n \n Much of this furniture is still usable. \n\n Billions of dollars in usable furniture and materials are forfeited each year to the landfill. \n\nBy selling gently used furniture to friends or neighbors, we can reduce the environmental impact."); 
+            updateStats("<li>It is estimated that over half of all bulky waste could be reused.</li>\n <li>Furniture and furnishings compose approximately 42% of bulky waste. </li>\n <li>There are 9.8 million tons of furniture waste added to landfills per year. </li> "); 
+            updateImpact("<li>As you can see, the vast majority of furniture is disposed of in a landfill, while some of it is burned.</li> \n <li>Much of this furniture is still usable. </li>\n<li> Billions of dollars in usable furniture and materials are forfeited each year to the landfill. </li>\n <li>By selling gently used furniture to friends or neighbors, we can reduce the environmental impact.</li>"); 
             break;
         }
         case "Cookware": {
             updateCharts("images/pans.jpg", "images/steel.jpg", "images/metalStats.png", "images/placeholder_chart.png"); 
-            updateStats("The rate of recycling for metals has increased drastically. \n\n A large percentage of metal products are made of recycled metals."); 
-            updateImpact("Cookware is normally composed of metals such as iron, steel and aluminum that are easily repurposed (bottom left).\n\n Our rate of recycling metals is increasing(top right), and recycling cookware responsibly can further this progress."); 
+            updateStats("<li>The rate of recycling for metals has increased drastically. </li>\n <li>A large percentage of metal products are made of recycled metals, including 40% of steel products.</li>\n <li> Throwing away an aluminum wastes the equivalent of that can filled with gasoline.</li>"); 
+            updateImpact("<li>Cookware is normally composed of metals such as iron, steel and aluminum that are easily repurposed (bottom left).</li>\n <li>Our rate of recycling metals is increasing (top right), and recycling cookware responsibly can further this progress.</li>"); 
             break;
         }
         case "Lights": {
             updateCharts("images/lights.png", "images/lightGraph.jpg", "images/bulbRecycling.jpg", "images/placeholder_chart.png"); 
-            updateStats("Here are some fascinating statistics, that will deeply change the way you see recycling " + item); 
-            updateImpact("The frankly alarming impact of " + item + " on the environment will surely surprise you"); 
+            updateStats("<li>It is estimated that 670 million lightbulbs are put into the environment annually.</li>\n <li> At this rate, up to 4 tons of mercury could be unsafely released into the environment. </li>" ); 
+            updateImpact("<li>Lightbulbs that are not disposed of properly can release Mercury into the environment.</li> \n <li> Mercury can have many harmful effects, such as contaminating water supplies and poisoning fish that we eat. </li> \n<li> 'Old' incandescent lightbulbs cannot be recycled and must be disposed of in the trash. </li>"); 
             break;
         }
         case "Boxes": {
             updateCharts("images/boxes.jpg", "images/box2.png", "images/box3.png", "images/box1.jpg"); 
-            updateStats("We are fairly good at recycling cardboard boxes, with 89.5% of corrugated cardboard recycled each year."); 
-            updateImpact("The frankly alarming impact of " + item + " on the environment will surely surprise you"); 
+            updateStats("<li>We are fairly good at recycling cardboard boxes, with 89.5% of corrugated cardboard recycled each year.</li><li> Recycling cardboard takes only 75% of the energy that it takes to create new cardboard.</li>"); 
+            updateImpact("<li>Each ton of cardboard recycled saves 17 trees.</li>\n <li> Each ton of cardboard recycled also prevents up to a ton of CO2 from entering the atmosphere and saves up to 7000 gallons of water.</li>"); 
             break; 
         }
         case "School-Supplies": {
             updateCharts("images/papers.jpg", "images/paper1.gif", "images/papergraph.jpg", "images/finalpaper.jpg"); 
-            updateStats("Paper accounts for 26% of the total Municipal Solid Waste (MSW).\n The rate of paper recovery has risen to 66% in the past few years."); 
-            updateImpact("The frankly alarming impact of " + item + " on the environment will surely surprise you"); 
+            updateStats("<li>Paper accounts for 26% of the total Municipal Solid Waste (MSW).</li>\n <li>The rate of paper recovery has risen to 66% in the past few years.</li> \n <li> In the United States, paper is used at a rate of 660 pounds per year per capita.</li> "); 
+            updateImpact("<li> The abundant use of paper products has caused the area of  natural pine forests in the Southeastern U.S.A. to decline by have in the last 50 years. </li> \n <li> Pulp and paper accounted for 20% of toxic waste released into the air last year.</li>"); 
             break; 
         }
         case "Cleaning": {
             updateCharts("images/cleaning.jpg", "images/cleaning1.jpg", "images/cleaner-chart.jpg", "images/cleaning4.jpg"); 
-            updateStats("Here are some fascinating statistics, that will deeply change the way you see recycling " + item); 
-            updateImpact("The frankly alarming impact of " + item + " on the environment will surely surprise you"); 
+            updateStats("<li>Cleaning products, along with other household products like paints and glues, annually release as many Volatile Organic Compounds (VOCs) into the air as vehicles. </li> \n <li>APproximately 5% of raw oil is turned into consumer products, such as cleaning products. </li>"); 
+            updateImpact("<li>An abundance of VOC's in the atmosphere can cause breathing problems for some people. </li> \n <li> Additional research is being performed on the effect of VOC's on both humans and the ecosystem.</li>"); 
             break; 
         }
     }
@@ -157,10 +157,10 @@ function showEnvironmentalInfo(item) {
 
 // Changes the four charts in the "Environmental Impact" section. Automatically formats from strings containing relative paths to chart image file 
 function updateCharts(c1, c2, c3, c4) {
-    document.getElementById("chart1").innerHTML = '<img src=' + c1 + ' alt="Relevant chart">'; 
-    document.getElementById("chart2").innerHTML = '<img src=' + c2 + ' alt="Relevant chart">'; 
-    document.getElementById("chart3").innerHTML = '<img src=' + c3 + ' alt="Relevant chart">'; 
-    document.getElementById("chart4").innerHTML = '<img src=' + c4 + ' alt="Relevant chart">'; 
+    document.getElementById("chart1").innerHTML = '<img src=' + c1 + ' alt="Relevant chart" style="display: block; margin-left:auto; margin-right:auto;">'; 
+    document.getElementById("chart2").innerHTML = '<img src=' + c2 + ' alt="Relevant chart" style="display: block; margin-left:auto; margin-right:auto;">'; 
+    document.getElementById("chart3").innerHTML = '<img src=' + c3 + ' alt="Relevant chart" style="display: block; margin-left:auto; margin-right:auto;">'; 
+    document.getElementById("chart4").innerHTML = '<img src=' + c4 + ' alt="Relevant chart" style="display: block; margin-left:auto; margin-right:auto;">'; 
 }
 
 // changes the statistics displayed in the "Relevant Stats" subsection of the "Environmental Impact" section. Takes raw text and inserts it 
