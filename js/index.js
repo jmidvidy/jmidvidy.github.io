@@ -117,37 +117,37 @@ function showEnvironmentalInfo(item) {
     // TODO: also update the stats and impact lines with actual information. 
     switch(item) {
         case "Furniture": {
-            updateCharts("images/couch.jpg", "images/placeholder_chart.png", "images/placeholder_chart.png", "images/placeholder_chart.png"); 
-            updateStats("Here are some fascinating statistics, that will deeply change the way you see recycling " + item +".\nThis newline is a test.\nAs is this one."); 
-            updateImpact("The frankly alarming impact of " + item + " on the environment will surely surprise you"); 
+            updateCharts("images/couch.jpg", "images/chairs3.jpg", "images/furniture2.jpg", "images/chairtrashpic.jpg"); 
+            updateStats("There are 9.8 million tons of furniture waste added to landfills per year."); 
+            updateImpact("As you can see, the vast majority of furniture is disposed of in a landfill,\n while some of it is burned.\n \n Much of this furniture is still usable. \n\n Billions of dollars in usable furniture and materials are forfeited each year to the landfill. \n\nBy selling gently used furniture to friends or neighbors, we can reduce the environmental impact."); 
             break;
         }
         case "Cookware": {
-            updateCharts("images/pans.jpg", "images/placeholder_chart.png", "images/placeholder_chart.png", "images/placeholder_chart.png"); 
-            updateStats("Here are some fascinating statistics, that will deeply change the way you see recycling " + item); 
-            updateImpact("The frankly alarming impact of " + item + " on the environment will surely surprise you"); 
+            updateCharts("images/pans.jpg", "images/steel.jpg", "images/metalStats.png", "images/placeholder_chart.png"); 
+            updateStats("The rate of recycling for metals has increased drastically. \n\n A large percentage of metal products are made of recycled metals."); 
+            updateImpact("Cookware is normally composed of metals such as iron, steel and aluminum that are easily repurposed (bottom left).\n\n Our rate of recycling metals is increasing(top right), and recycling cookware responsibly can further this progress."); 
             break;
         }
         case "Lights": {
-            updateCharts("images/lights.png", "images/placeholder_chart.png", "images/placeholder_chart.png", "images/placeholder_chart.png"); 
+            updateCharts("images/lights.png", "images/lightGraph.jpg", "images/bulbRecycling.jpg", "images/placeholder_chart.png"); 
             updateStats("Here are some fascinating statistics, that will deeply change the way you see recycling " + item); 
             updateImpact("The frankly alarming impact of " + item + " on the environment will surely surprise you"); 
             break;
         }
         case "Boxes": {
-            updateCharts("images/boxes.jpg", "images/placeholder_chart.png", "images/placeholder_chart.png", "images/placeholder_chart.png"); 
-            updateStats("Here are some fascinating statistics, that will deeply change the way you see recycling " + item); 
+            updateCharts("images/boxes.jpg", "images/box2.png", "images/box3.png", "images/box1.jpg"); 
+            updateStats("We are fairly good at recycling cardboard boxes, with 89.5% of corrugated cardboard recycled each year."); 
             updateImpact("The frankly alarming impact of " + item + " on the environment will surely surprise you"); 
             break; 
         }
         case "School-Supplies": {
-            updateCharts("images/papers.jpg", "images/placeholder_chart.png", "images/placeholder_chart.png", "images/placeholder_chart.png"); 
-            updateStats("Here are some fascinating statistics, that will deeply change the way you see recycling " + item); 
+            updateCharts("images/papers.jpg", "images/paper1.gif", "images/papergraph.jpg", "images/finalpaper.jpg"); 
+            updateStats("Paper accounts for 26% of the total Municipal Solid Waste (MSW).\n The rate of paper recovery has risen to 66% in the past few years."); 
             updateImpact("The frankly alarming impact of " + item + " on the environment will surely surprise you"); 
             break; 
         }
         case "Cleaning": {
-            updateCharts("images/cleaning.jpg", "images/placeholder_chart.png", "images/placeholder_chart.png", "images/placeholder_chart.png"); 
+            updateCharts("images/cleaning.jpg", "images/cleaning1.jpg", "images/cleaner-chart.jpg", "images/cleaning4.jpg"); 
             updateStats("Here are some fascinating statistics, that will deeply change the way you see recycling " + item); 
             updateImpact("The frankly alarming impact of " + item + " on the environment will surely surprise you"); 
             break; 
