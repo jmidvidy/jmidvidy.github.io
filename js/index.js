@@ -26,7 +26,7 @@ $(document).ready(function(){
       //  console.log($(scrollTo).offset().top);
 
        $("html, body").animate({
-            scrollTop: $(scrollTo).offset().top - 155
+            scrollTop: $(scrollTo).offset().top - 156
         },1000);
     });
 
