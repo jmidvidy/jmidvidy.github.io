@@ -1,6 +1,15 @@
 //smooth scroll implementation
 $(document).ready(function(){
 
+    $("#video-SB1").hide();
+    $("#video-SB2").hide();
+    $("#video-SB3").hide();
+    $("#video-SB4").hide();
+    $("#video-SB5").hide();
+    $("#video-SB6").hide();
+
+
+    //enter button smooth scroll
     $("#enter-button").click(function(e){
 
         //don't jump
@@ -16,7 +25,8 @@ $(document).ready(function(){
     });
 
 
-    $(".nav-link").click(function(e){
+    //top nav bar smooth scroll
+    $("#top-nav-bar .nav-link").click(function(e){
 
         //don't jump
         e.preventDefault();
@@ -30,48 +40,30 @@ $(document).ready(function(){
         },1000);
     });
 
+    var prevSelected = "SB0";
+    //button click for videos
+    $("#SB-Bottom .btn-group button").click(function(e){
+
+        e.preventDefault();
+
+        //get id of clicked button
+        var clicked = $(this).attr('id');
+
+        //format access strings
+        var strHIDE = "#video-" + prevSelected;
+        var strSHOW = "#video-" + clicked;
+
+        //hide and show:
+        $(strHIDE).hide();
+        $(strSHOW).show();
+
+        //format for next 
+        prevSelected = clicked;
+
+    });
+
 
 });
-
-//intro animation
-$(document).ready(function(){
-    function onScrollInit( items, trigger ) {
-        items.each( function() {
-        var osElement = $(this),
-            osAnimationClass = osElement.attr('data-os-animation'),
-            osAnimationDelay = osElement.attr('data-os-animation-delay');
-          
-            osElement.css({
-                '-webkit-animation-delay':  osAnimationDelay,
-                '-moz-animation-delay':     osAnimationDelay,
-                'animation-delay':          osAnimationDelay
-            });
-
-            var osTrigger = ( trigger ) ? trigger : osElement;
-            
-            osTrigger.waypoint(function() {
-                osElement.addClass('animated').addClass(osAnimationClass);
-                },{
-                    triggerOnce: true,
-                    offset: '80%'
-            });
-        });
-    }
-
-    onScrollInit( $('.os-animation') );
-    onScrollInit( $('.staggered-animation'), $('.staggered-animation-container') );
-});//]]>  
-
-
-
-
-
-
-
-
-
-
-
 
 // Changes information displayed in "Eco-Friendly Solutions" section based on which category the user hovers over. 
 function showInfo(item){
@@ -174,3 +166,4 @@ function updateStats(stat_text) {
 function updateImpact(impact_text) {
     document.getElementById("impact-paragraph").innerHTML = impact_text.replace(/\n/g, "<br>"); 
 }
+
