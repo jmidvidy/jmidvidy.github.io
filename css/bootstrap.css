@@ -3527,7 +3527,7 @@ input[type="button"].btn-block {
 .btn-group-vertical > .btn-group + .btn,
 .btn-group-vertical > .btn-group + .btn-group {
   margin-top: 0;
-  margin-left: 0;
+  margin: auto;
 }
 
 .btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle),

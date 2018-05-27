@@ -245,19 +245,20 @@ img {
 
 #SB-Bottom-Buttons {
 	margin:auto;
+	width: 80%;
 
 }
 
 #SB-Bottom .btn-group{
 	margin: 0 auto; 
     text-align: center;
-    width: inherit;
+    width: 100%;
     display: inline-block;
+
 }
 
 #SB-Button button {
-	margin: auto;
-	margin-left: 2%;
+
 }
 
 
@@ -358,7 +359,7 @@ img {
 
 #TB-Bottom {
 	width: 100%;
-	height: 44%;	
+	height: 40%;	
 }
 
 #TB-Bottom .card {
