@@ -109,7 +109,6 @@ img {
   height: 1.3%;
   text-align: center;
   background-color: cyan;
-  font-size: 5000%;
   border-top:3px solid #1a1a1a;
   position: sticky;
   top: 0%;
@@ -124,7 +123,7 @@ img {
   border: 2px solid #1a1a1a;
   text-shadow:1px 1px #e83e8c;
   color: white;
-  height: 90%;
+  height: 80%;
   width: 70%;
 }
 
@@ -204,8 +203,8 @@ img {
 	margin-top: 4%;
 }
 
-#SB-Top-Left .btn-group-vertical .btn-group {
-  width: 1%;
+#SB-Top-Left .btn-group-vertical {
+  width: 100%;
 } 
 
 
@@ -223,7 +222,7 @@ img {
 
 
 #SB-Bottom {
-	border:2px solid black;
+	border:2px solid #d9534f;
 	height: 48%;
 	width: 98%;
 	margin: auto;
@@ -231,7 +230,7 @@ img {
 }
 
 #SB-Bottom-Video {
-	border: 2px solid black;
+	border: 2px solid #d9534f;
 	width: 50%;
 	height: 80%;
 	margin: auto;
@@ -244,20 +243,22 @@ img {
 	width: 100%;
 }
 
+#SB-Bottom-Buttons {
+	margin:auto;
 
-#SB-Bottom .btn-group {
-	width: 100%;
-	margin: auto;
-	margin-left: 7%;
+}
+
+#SB-Bottom .btn-group{
+	margin: 0 auto; 
+    text-align: center;
+    width: inherit;
+    display: inline-block;
 }
 
 #SB-Button button {
-	padding-right: 2%;
+	margin: auto;
+	margin-left: 2%;
 }
-
-
-
-
 
 
 
@@ -265,19 +266,22 @@ img {
 
 
 #TB-Top-Nav {
-	width: 99.9%;
+	width: 100%;
 	height: 5.6%;
 	float: left;
-
+	background-color: #1F9BCF;
 }
 
 #TB-Top-Nav .btn-group {
-	width:100%;
+	margin: 0 auto; 
+    text-align: center;
+    width: inherit;
+    display: inline-block;
 	}
 
 #TB-Top-Nav label {
-	padding-left: 5.53%;
-	padding-right: 5.53%
+	padding-left: 4.53%;
+	padding-right: 4.53%
 	}
 
 #TB-Top {
@@ -375,20 +379,23 @@ img {
 /*--Top--*/
 #Environmental-Solutions {
   height: 45%;
+  margin-top: 1%;
 }
 
 #Environmental-Solutions .jumbotron {
   margin-bottom: 0px;
   height: 100%;
   width: 100%;
-
-
 }
 
 #ES-Block {
   height: 90%;
   width: 100%;
   margin-left: 1%;
+}
+
+.ES-Top-Title {
+	margin-left: 2%;
 }
 
 
@@ -460,8 +467,9 @@ img {
 
 
 #Local-Resources{
-  width: 100%;
+  width: 98%;
   height:50%;
+  margin-left: 1%;
 }
 
 #Local-Resources .jumbotron{
@@ -474,7 +482,7 @@ img {
 }
 
 #LS-Block {
-  height: 94%;
+  height: 100%;
   width: 100%;
 }
 
@@ -520,9 +528,9 @@ img {
 
 #Northwestern-Resources .card {
   margin-top: 0px;
-  padding-bottom: 0pxs;
+  padding-bottom: 7%;
   width: 100%;
-  height: 10%;
+  height: 100%;
 }
 
 

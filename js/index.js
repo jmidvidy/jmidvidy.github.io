@@ -36,8 +36,8 @@ $(document).ready(function(){
       //  console.log($(scrollTo).offset().top);
 
        $("html, body").animate({
-            scrollTop: $(scrollTo).offset().top - 156
-        },1000);
+            scrollTop: $(scrollTo).offset().top - $("#top-nav-bar").height() - 3
+                   },1000);
     });
 
     var prevSelected = "SB0";

@@ -3518,7 +3518,7 @@ input[type="button"].btn-block {
 
 .btn-group-vertical .btn,
 .btn-group-vertical .btn-group {
-  width: 192%;
+  width: 100%;
   margin: auto;
 }
 
