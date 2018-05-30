@@ -167,3 +167,42 @@ function updateImpact(impact_text) {
     document.getElementById("impact-paragraph").innerHTML = impact_text.replace(/\n/g, "<br>"); 
 }
 
+function showMovingHelp(categ){
+	switch(categ) {
+        case "Tools": {
+        	updateMovingHelp('Tools');
+        	break;
+    	}
+    	case "Boxes": {
+        	updateMovingHelp('Boxes');
+        	break;
+    	}
+    	case "Furniture": {
+        	updateMovingHelp('Furniture');
+        	break;
+    	}
+    	case "Services": {
+        	updateMovingHelp('Services');
+        	break;
+    	}
+    	case "People": {
+        	updateMovingHelp('People');
+        	break;
+    	}
+    	case "Time": {
+        	updateMovingHelp('Time');
+        	break;
+    	}
+    	case "More": {
+        	updateMovingHelp('More');
+        	break;
+    	}
+	}
+}
+
+function updateMovingHelp(text){
+	document.getElementById("movingHelp").innerHTML = text;
+	}
+function updateMovingHelpHeader(text){
+	document.getElementById("movingTitle").innerHTML = text;
+	}

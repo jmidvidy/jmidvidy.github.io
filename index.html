@@ -63,21 +63,21 @@
                   <div class="card-header">So, you are moving out?</div>
                   <h4 class="card-title">Here's what you need:</h4>
                   <div class="btn-group-vertical" data-toggle="buttons">
-                    <button type="button" class="btn btn-danger">Tools</button>
-                    <button type="button" class="btn btn-danger">Boxes</button>
-                    <button type="button" class="btn btn-danger">Disasemble Furniture</button>
-                    <button type="button" class="btn btn-danger">Services</button>
-                    <button type="button" class="btn btn-danger">People</button>
-                    <button type="button" class="btn btn-danger">Time</button>
-                    <button type="button" class="btn btn-danger">More</button>
+                    <button type="button" class="btn btn-danger" onmousedown="showMovingHelp('Tools')">Tools</button>
+                    <button type="button" class="btn btn-danger" onmousedown="showMovingHelp('Boxes')">Boxes</button>
+                    <button type="button" class="btn btn-danger" onmousedown="showMovingHelp('Furniture')">Disasemble Furniture</button>
+                    <button type="button" class="btn btn-danger" onmousedown="showMovingHelp('Services')">Services</button>
+                    <button type="button" class="btn btn-danger" onmousedown="showMovingHelp('People')">People</button>
+                    <button type="button" class="btn btn-danger" onmousedown="showMovingHelp('Time')">Time</button>
+                    <button type="button" class="btn btn-danger" onmousedown="showMovingHelp('More')">More</button>
                   </div>
                 </div>
               <div id="SB-Top-Right">
                   <div class="card border-danger mb-3">
                   <div class="card-body">
-                    <h4 class="card-title">Category</h4>
+                    <h4 class="card-title" id = "movingTitle">Category</h4>
                     <hr class="my-4">
-                    <p class="card-text">Info for Specific Category</p>
+                    <p class="card-text" id ="movingHelp" >Info for Specific Category</p>
                   </div>
                 </div>
               </div>
