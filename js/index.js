@@ -104,9 +104,6 @@ function showInfo(item){
 
 // Changes graphs, statistics, and information displayed in "Environmental Impact" section based on which category the user selects 
 function showEnvironmentalInfo(item) {
-    // TODO: find charts and insert them into the "updateCharts()" lines
-    //      Also make the first option the default one displayed on the page 
-    // TODO: also update the stats and impact lines with actual information. 
     switch(item) {
         case "Furniture": {
             updateCharts("images/couch.jpg", "images/chairs3.jpg", "images/furniture2.jpg", "images/chairtrashpic.jpg"); 
@@ -170,31 +167,45 @@ function updateImpact(impact_text) {
 function showMovingHelp(categ){
 	switch(categ) {
         case "Tools": {
-        	updateMovingHelp('Tools');
+            updateMovingHelpHeader('Tools');
+            updateMovingHelp('One of the most important preparations for moving out is making sure you have the right tools. Here are some suggestions for tools to have ready:<br>'
+                        + "<li>A moving dolly for heavier items</li><br><li>Packing tape</li><br><li>Moving straps</li>");
         	break;
     	}
     	case "Boxes": {
-        	updateMovingHelp('Boxes');
+            updateMovingHelpHeader('Boxes');
+            updateMovingHelp("You will almost certainly need boxes in order to move out. Any items that are loose or small enough to fit should be put into a box. This keeps " +
+                        "everything organized and safe. It may be possible to get boxes for free from your school, otherwise look for moving companies such as U-Haul, which often" +
+                        " sell boxes quite cheaply."); 
         	break;
     	}
     	case "Furniture": {
-        	updateMovingHelp('Furniture');
+            updateMovingHelpHeader('Disassemble Furniture');
+            updateMovingHelp("You may need to disassemble some of your furniture in order to transport it. Here are some recommendations to help you:<br>" + 
+                        "<li>Have a partner help you by keeping furniture steady.</li><br><li>Make sure you have a toolkit handy! Don't use the hammer, however.</li><br>" + 
+                        "<li>Have some plastic bags ahandy to hold screws and bolts after removing them. Once you've got the furniture fully disassembled, tape the bags " + 
+                        "to the piece of furniture they correspond to, so you don't lose or forget about them.</li>"); 
         	break;
     	}
     	case "Services": {
-        	updateMovingHelp('Services');
+            updateMovingHelpHeader('Services');
+            updateMovingHelp("If you can't or don't want to do all your moving yourself, there are all kinds of services that can help. Here are some examples: <br>" + 
+                        "<li>Need a vehicle? Try <a href='https://www.uhaul.com/'>U-Haul</a></li><li>Don't want to bother with the hassle at all? Have <a href='https://twomenandatruck.com/local-moving/home-services'>Two Men and a Truck</a> do the hard work for you!</li>"); 
         	break;
     	}
     	case "People": {
-        	updateMovingHelp('People');
+            updateMovingHelpHeader('People');
+            updateMovingHelp("If you can avoid it, don't move alone! Even with all the supplies and a vehicle, moving everything out of your room or apartment by yourself is a daunting task. The easy options are to ask friends or parents if they're willing to help with your move. Don't expect them to do it for free, though! Offer to help them move out next time, or even just buy them dinner. If you don't have friends or family who are able to help, we recommend hiring some movers to help out. Only move out by yourself as a last resort.");
         	break;
     	}
     	case "Time": {
-        	updateMovingHelp('Time');
+            updateMovingHelpHeader('Time');
+            updateMovingHelp("Moving takes a lot longer than most people expect it to. Without even considering travel times, it can take up to three hours to move out of a one-bedroom apartment. If you have a two-bedroom apartment, expect it to take up to five hours. Our advice is to err on the side of caution, and set aside more time than you think you'll need to complete the move. It's always better to be safe than sorry.");
         	break;
     	}
     	case "More": {
-        	updateMovingHelp('More');
+            updateMovingHelpHeader('More');
+            updateMovingHelp("See the rest of our site for more information!"); 
         	break;
     	}
 	}
