@@ -60,7 +60,7 @@ img {
 }
 
 #main-body-Section .jumbotron {
-	height: 300%;
+	height: 100%;
 	width: 100%;
 	color: black;
 	padding-top: 0px;
@@ -68,7 +68,7 @@ img {
 
 #First-Block {
 	width: 87%;
-	height: 3.2%;
+	height: 7.5%;
 	padding: 0;
 	margin: auto;
 	padding-top: 2%;
@@ -106,7 +106,7 @@ img {
 
 #top-nav-bar {
   width: 100%;
-  height: 1.3%;
+  height: 3.5%;
   text-align: center;
   background-color: cyan;
   border-top:3px solid #1a1a1a;
@@ -134,30 +134,31 @@ img {
 
 
 #Section-Two {
-	height: 1%;
+	height: 2.5%;
 }
 
 #Section-Three {
-	height: 1%;
+	height: 2.5%;
 }
 
 #Section-Four {
-	height: .9%;
+	height: 2.5%;
 }
 
 #Third-Block {
-	height: 8%;
+	height: 25%;
 }
 
 #TB-Main {
 	width: 90%;
 	height: 98%;
 	border:2px solid #1a1a1a;
+	border-radius: 10px;
 	margin: auto;
 }
 
 #Fourth-Block {
-	height: 10%;
+	height: 30%;
 }
 
 #FB-Main {
@@ -165,6 +166,8 @@ img {
 	height: 98%;
 	margin: auto;
 	border:2px solid #1a1a1a;
+	border-radius: 10px;
+
 }
 
 
@@ -172,7 +175,7 @@ img {
 
 #Second-Block {
 	width: 100%;
-	height: 8%;
+	height: 25%;
 	margin: auto;
 	color: black;
 	margin-top: 25px;
@@ -182,6 +185,7 @@ img {
 	width: 90%;
 	height: 98%;
 	border:2px solid #1a1a1a;
+	border-radius: 10px;
 	margin: auto;
 }
 
@@ -222,7 +226,7 @@ img {
 
 
 #SB-Bottom {
-	border:2px solid #d9534f;
+	border-top:2px solid #d9534f;
 	height: 48%;
 	width: 98%;
 	margin: auto;
@@ -239,7 +243,7 @@ img {
 
 #SB-Bottom-Video iframe {
 	margin: auto;
-	height: 355px;
+	height: 365px;
 	width: 100%;
 }
 
@@ -456,6 +460,11 @@ img {
 
 #RILeft li:hover {
   background-color: cyan;
+}
+
+#RILeft .card-body {
+	padding-top: 8%;
+	text-align: center;	
 }
 
 #RIRight .card{
