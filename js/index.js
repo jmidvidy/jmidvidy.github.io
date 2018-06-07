@@ -109,36 +109,42 @@ function showEnvironmentalInfo(item) {
             updateCharts("images/couch.jpg", "images/chairs3.jpg", "images/furniture2.jpg", "images/chairtrashpic.jpg"); 
             updateStats("<li>It is estimated that over half of all bulky waste could be reused.</li>\n <li>Furniture and furnishings compose approximately 42% of bulky waste. </li>\n <li>There are 9.8 million tons of furniture waste added to landfills per year. </li> "); 
             updateImpact("<li>As you can see, the vast majority of furniture is disposed of in a landfill, while some of it is burned.</li> \n <li>Much of this furniture is still usable. </li>\n<li> Billions of dollars in usable furniture and materials are forfeited each year to the landfill. </li>\n <li>By selling gently used furniture to friends or neighbors, we can reduce the environmental impact.</li>"); 
+            updateImpactHeader("Furniture Impact");
             break;
         }
         case "Cookware": {
             updateCharts("images/pans.jpg", "images/steel.jpg", "images/metalStats.png", "images/placeholder_chart.png"); 
             updateStats("<li>The rate of recycling for metals has increased drastically. </li>\n <li>A large percentage of metal products are made of recycled metals, including 40% of steel products.</li>\n <li> Throwing away an aluminum wastes the equivalent of that can filled with gasoline.</li>"); 
             updateImpact("<li>Cookware is normally composed of metals such as iron, steel and aluminum that are easily repurposed (bottom left).</li>\n <li>Our rate of recycling metals is increasing (top right), and recycling cookware responsibly can further this progress.</li>"); 
+            updateImpactHeader("Cookware Impact");
             break;
         }
         case "Lights": {
             updateCharts("images/lights.png", "images/lightGraph.jpg", "images/bulbRecycling.jpg", "images/placeholder_chart.png"); 
             updateStats("<li>It is estimated that 670 million lightbulbs are put into the environment annually.</li>\n <li> At this rate, up to 4 tons of mercury could be unsafely released into the environment. </li>" ); 
             updateImpact("<li>Lightbulbs that are not disposed of properly can release Mercury into the environment.</li> \n <li> Mercury can have many harmful effects, such as contaminating water supplies and poisoning fish that we eat. </li> \n<li> 'Old' incandescent lightbulbs cannot be recycled and must be disposed of in the trash. </li>"); 
+            updateImpactHeader("Lights Impact");
             break;
         }
         case "Boxes": {
             updateCharts("images/boxes.jpg", "images/box2.png", "images/box3.png", "images/box1.jpg"); 
             updateStats("<li>We are fairly good at recycling cardboard boxes, with 89.5% of corrugated cardboard recycled each year.</li><li> Recycling cardboard takes only 75% of the energy that it takes to create new cardboard.</li>"); 
             updateImpact("<li>Each ton of cardboard recycled saves 17 trees.</li>\n <li> Each ton of cardboard recycled also prevents up to a ton of CO2 from entering the atmosphere and saves up to 7000 gallons of water.</li>"); 
+            updateImpactHeader("Boxes Impact");
             break; 
         }
         case "School-Supplies": {
             updateCharts("images/papers.jpg", "images/paper1.gif", "images/papergraph.jpg", "images/finalpaper.jpg"); 
             updateStats("<li>Paper accounts for 26% of the total Municipal Solid Waste (MSW).</li>\n <li>The rate of paper recovery has risen to 66% in the past few years.</li> \n <li> In the United States, paper is used at a rate of 660 pounds per year per capita.</li> "); 
             updateImpact("<li> The abundant use of paper products has caused the area of  natural pine forests in the Southeastern U.S.A. to decline by have in the last 50 years. </li> \n <li> Pulp and paper accounted for 20% of toxic waste released into the air last year.</li>"); 
+            updateImpactHeader("School Supplies Impact");
             break; 
         }
         case "Cleaning": {
             updateCharts("images/cleaning.jpg", "images/cleaning1.jpg", "images/cleaner-chart.jpg", "images/cleaning4.jpg"); 
             updateStats("<li>Cleaning products, along with other household products like paints and glues, annually release as many Volatile Organic Compounds (VOCs) into the air as vehicles. </li> \n <li>APproximately 5% of raw oil is turned into consumer products, such as cleaning products. </li>"); 
             updateImpact("<li>An abundance of VOC's in the atmosphere can cause breathing problems for some people. </li> \n <li> Additional research is being performed on the effect of VOC's on both humans and the ecosystem.</li>"); 
+            updateImpactHeader("Cleaning Impact");
             break; 
         }
     }
@@ -163,24 +169,26 @@ function updateStats(stat_text) {
 function updateImpact(impact_text) {
     document.getElementById("impact-paragraph").innerHTML = impact_text.replace(/\n/g, "<br>"); 
 }
-
+function updateImpactHeader(impact_text) {
+    document.getElementById("ImpactHeader").innerHTML = impact_text.replace(/\n/g, "<br>"); 
+}
 function showMovingHelp(categ){
 	switch(categ) {
         case "Tools": {
-            updateMovingHelpHeader('Tools');
+            updateMovingHelpHeader('<b><u>Tools</b></u>');
             updateMovingHelp('One of the most important preparations for moving out is making sure you have the right tools. Here are some suggestions for tools to have ready:<br>'
                         + "<li>A moving dolly for heavier items</li><br><li>Packing tape</li><br><li>Moving straps</li>");
         	break;
     	}
     	case "Boxes": {
-            updateMovingHelpHeader('Boxes');
-            updateMovingHelp("You will almost certainly need boxes in order to move out. Any items that are loose or small enough to fit should be put into a box. This keeps " +
-                        "everything organized and safe. It may be possible to get boxes for free from your school, otherwise look for moving companies such as U-Haul, which often" +
-                        " sell boxes quite cheaply."); 
+            updateMovingHelpHeader('<b><u>Boxes</b></u>');
+            updateMovingHelp("You will almost certainly need boxes in order to move out.<br><li> Any items that are loose or small enough to fit should be put into a box.</li><br><li> This keeps " +
+                        "everything organized and safe.</li><br><li> It may be possible to get boxes for free from your school; otherwise look for moving companies such as U-Haul, which often" +
+                        " sell boxes quite cheaply.</li>"); 
         	break;
     	}
     	case "Furniture": {
-            updateMovingHelpHeader('Disassemble Furniture');
+            updateMovingHelpHeader('<b><u>Disassemble Furniture</b></u>');
             updateMovingHelp("You may need to disassemble some of your furniture in order to transport it. Here are some recommendations to help you:<br>" + 
                         "<li>Have a partner help you by keeping furniture steady.</li><br><li>Make sure you have a toolkit handy! Don't use the hammer, however.</li><br>" + 
                         "<li>Have some plastic bags ahandy to hold screws and bolts after removing them. Once you've got the furniture fully disassembled, tape the bags " + 
@@ -188,23 +196,23 @@ function showMovingHelp(categ){
         	break;
     	}
     	case "Services": {
-            updateMovingHelpHeader('Services');
+            updateMovingHelpHeader('<b><u>Services</b></u>');
             updateMovingHelp("If you can't or don't want to do all your moving yourself, there are all kinds of services that can help. Here are some examples: <br>" + 
-                        "<li>Need a vehicle? Try <a href='https://www.uhaul.com/'>U-Haul</a></li><li>Don't want to bother with the hassle at all? Have <a href='https://twomenandatruck.com/local-moving/home-services'>Two Men and a Truck</a> do the hard work for you!</li>"); 
+                        "<li>Need a vehicle? Try <a href='https://www.uhaul.com/'>U-Haul</a></li><br><li>Don't want to bother with the hassle at all? Have <a href='https://twomenandatruck.com/local-moving/home-services'>Two Men and a Truck</a> do the hard work for you!</li>"); 
         	break;
     	}
     	case "People": {
-            updateMovingHelpHeader('People');
-            updateMovingHelp("If you can avoid it, don't move alone! Even with all the supplies and a vehicle, moving everything out of your room or apartment by yourself is a daunting task. The easy options are to ask friends or parents if they're willing to help with your move. Don't expect them to do it for free, though! Offer to help them move out next time, or even just buy them dinner. If you don't have friends or family who are able to help, we recommend hiring some movers to help out. Only move out by yourself as a last resort.");
+            updateMovingHelpHeader('<b><u>People</b></u>');
+            updateMovingHelp("If you can avoid it, don't move alone! <br><li>Even with all the supplies and a vehicle, moving everything out of your room or apartment by yourself is a daunting task. </li><br><li>The easy options are to ask friends or parents if they're willing to help with your move. Don't expect them to do it for free, though! </li><br><li>Offer to help them move out next time, or even just buy them dinner. </li><br><li>If you don't have friends or family who are able to help, we recommend hiring professional movers. </li><br><li>Only move out by yourself as a last resort.");
         	break;
     	}
     	case "Time": {
-            updateMovingHelpHeader('Time');
-            updateMovingHelp("Moving takes a lot longer than most people expect it to. Without even considering travel times, it can take up to three hours to move out of a one-bedroom apartment. If you have a two-bedroom apartment, expect it to take up to five hours. Our advice is to err on the side of caution, and set aside more time than you think you'll need to complete the move. It's always better to be safe than sorry.");
+            updateMovingHelpHeader('<b><u>Time</b></u>');
+            updateMovingHelp("Moving takes a lot longer than most people expect it to.<br><li> Without even considering travel times, it can take up to three hours to move out of a one-bedroom apartment. </li><br><li>If you have a two-bedroom apartment, expect it to take up to five hours.</li><br><li> Our advice is to err on the side of caution, and set aside more time than you think you'll need to complete the move. </li><br><li>It's always better to be safe than sorry!");
         	break;
     	}
     	case "More": {
-            updateMovingHelpHeader('More');
+            updateMovingHelpHeader('<b><u>More</b></u>');
             updateMovingHelp("See the rest of our site for more information!"); 
         	break;
     	}
